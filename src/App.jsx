@@ -1,9 +1,10 @@
-import FlashcardList from "./components/FlashcardList";
+import MainPage from "./components/MainPage";
+import { AppProvider } from "./components/AppContext";
 
 export default function App() {
   return (
-    <div className="App">
-      <FlashcardList />
-    </div>
+    <AppProvider>
+      <MainPage />
+    </AppProvider>
   );
 }
